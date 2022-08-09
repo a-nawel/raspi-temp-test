@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "Temperature test %s\nDevice: raspi-%s" "$(date)" "$(cat /sys/class/net/eth0/address)" > temp-results.txt
+# Start the sampling process 
 ./temp-sampling.sh >/dev/null 2>&1 &
 
 # Calculate the value of pi for 20 min 
